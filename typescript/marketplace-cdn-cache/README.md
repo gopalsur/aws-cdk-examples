@@ -50,7 +50,7 @@ export CDN="https://<distribution-domain>.cloudfront.net"
 curl -sI "$CDN/static/app.css" | grep -i "x-cache"
 
 # Product image — 30-day TTL
-curl -sI "$CDN/images/product-001.png" | grep -iE "x-cache|age"
+curl -sI "$CDN/images/Product-1.png" | grep -iE "x-cache|age"
 
 # Product API — 60-second TTL
 curl -sI "$CDN/api/products/Product-1" | grep -iE "x-cache|age"
